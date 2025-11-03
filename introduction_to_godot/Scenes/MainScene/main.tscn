@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://df01sqhhtt78v"]
+
+[ext_resource type="PackedScene" uid="uid://crpad3cdeiokj" path="res://Scenes/Player/Player.tscn" id="1_7rkev"]
+
+[node name="Main" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("1_7rkev")]
+position = Vector2(116, 38)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(7, -6.829262)
+scale = Vector2(1, 1.0243902)
+polygon = PackedVector2Array(18, 116, 249, 116, 249, 157, 18, 157)
